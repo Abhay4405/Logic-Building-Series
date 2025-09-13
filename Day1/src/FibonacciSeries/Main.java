@@ -13,7 +13,7 @@ public class Main {
 		if (n2 >= 1) {
 			System.out.println(n2);
 		}
-		for (int i = 3; i < times; i++) {
+		for (int i = 3; i <= times; i++) {
 			int next = n1 + n2;
 			System.out.println(next);
 			n1 = n2;
