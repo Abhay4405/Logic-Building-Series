@@ -3,7 +3,7 @@ package CheckIfStringContainsAnotherString;
 public class Main {
 	public static void main(String[] args) {
 		String s1 = "Abhay Dubey From Viva College";
-		String s2 = "Sdac";
+		String s2 = "College";
 		int index2 = 0;
 		boolean isFound = false;
 		for (int i = 0; i < s1.length(); i++) {

@@ -24,8 +24,6 @@ public class Main {
 			} else if (i == s.length() - 1) {
 				n = n + s.charAt(i);
 				arr[index] = n;
-				index++;
-				n = "";
 			} else {
 				arr[index] = n;
 				index++;

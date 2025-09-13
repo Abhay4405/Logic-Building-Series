@@ -3,7 +3,7 @@ package CheckIfTwoStringsAreEqual;
 public class Main {
 	public static void main(String[] args) {
 		String s1 = "abhay";
-		String s2 = "abhay";
+		String s2 = "obhay";
 		boolean isEqual = true;
 		if (s1.length() != s2.length()) {
 			isEqual = false;
@@ -13,6 +13,7 @@ public class Main {
 					isEqual = true;
 				} else {
 					isEqual = false;
+					break;
 				}
 			}
 		}

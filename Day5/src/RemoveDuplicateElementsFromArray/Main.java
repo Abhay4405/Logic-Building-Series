@@ -15,6 +15,8 @@ public class Main {
 				}
 			}
 		}
-		System.out.println(Arrays.toString(arr));
+		for (int k = 0; k < arr.length; k++) {
+			System.out.println(arr[k] + " ");
+		}
 	}
 }

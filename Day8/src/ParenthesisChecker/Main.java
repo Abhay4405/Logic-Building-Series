@@ -2,21 +2,24 @@ package ParenthesisChecker;
 
 public class Main {
 	public static void main(String[] args) {
-		String s = "{{{}}}}";
-		int leftBraces = 0;
-		int RightBraces = 0;
+		String s = "(1+2)=3)(";
+		int count = 0;
 		for (int i = 0; i < s.length(); i++) {
-			if (s.charAt(i) == '{') {
-				leftBraces = leftBraces + 1;
-			} else if (s.charAt(i) == '}') {
-				RightBraces = RightBraces + 1;
+			if (count < 0) {
+				break;
+			}
+			if (s.charAt(i)=='(') {
+				count ++;
+			}
+			if (s.charAt(i)==')') {
+				count --;
 			}
 		}
-		if (leftBraces == RightBraces) {
+		if (count == 0) {
 			System.out.println("Perfect Parenthesis");
-		} else {
+		}
+		else {
 			System.out.println("Imperfect Parenthesis");
 		}
-
 	}
 }
