@@ -8,7 +8,7 @@ public class Main {
 		int[] arr2 = { 2, 5, 7, 5, 9 };
 		boolean isEqual = true;
 
-		if (arr1 != arr2) {
+		if (arr1.length != arr2.length) {
 			isEqual = false;
 		} else {
 			for (int i = 0; i < arr2.length; i++) {
