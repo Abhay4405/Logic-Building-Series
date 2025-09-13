@@ -4,20 +4,20 @@ import java.util.Arrays;
 
 public class Main {
 	public static void main(String[] args) {
-		int[] arr = {2,5,7,2,7,5,2,7,7,7,7,5,5};
-		for (int i = 0; i < arr.length-1; i++) {
+		int[] arr = { 2, 5, 7, 2, 7, 5, 2, 7, 7, 7, 7, 5, 5 };
+		for (int i = 0; i < arr.length - 1; i++) {
 			if (arr[i] == 0) {
 				continue;
 			}
 			int count = 0;
-			for (int j = i+1; j < arr.length; j++) {
+			for (int j = i + 1; j < arr.length; j++) {
 				if (arr[i] == arr[j]) {
 					arr[j] = 0;
-					count ++;
+					count++;
 				}
 			}
 			if (count != 0) {
-				System.out.println(arr[i]+" is repeated "+ count + " times.");
+				System.out.println(arr[i] + " is repeated " + count + " times.");
 			}
 		}
 		System.out.println(Arrays.toString(arr));

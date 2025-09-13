@@ -5,9 +5,10 @@ public class Main {
 		if (num == 0) {
 			return 0;
 		}
-		return num%10+sum(num/10);
+		return num % 10 + sum(num / 10);
 	}
-public static void main(String[] args) {
-	System.out.println(sum(4357));
-}
+
+	public static void main(String[] args) {
+		System.out.println(sum(4357));
+	}
 }

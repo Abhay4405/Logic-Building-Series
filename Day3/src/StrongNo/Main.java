@@ -8,21 +8,21 @@ public class Main {
 		}
 		return fact;
 	}
-public static void main(String[] args) {
-	int num = 145;
-	int result = 0;
-	int n = num;
-	while (num != 0) {
-		int rem = num % 10;
-		result = result + fact(rem);
-		num = num/10;
+
+	public static void main(String[] args) {
+		int num = 145;
+		int result = 0;
+		int n = num;
+		while (num != 0) {
+			int rem = num % 10;
+			result = result + fact(rem);
+			num = num / 10;
+		}
+		if (result == n) {
+			System.out.println(n + " is a Strong Number");
+		} else {
+			System.out.println(n + " is not a Strong Number");
+		}
+
 	}
-	if (result == n) {
-		System.out.println(n + " is a Strong Number");
-	}
-	else {
-		System.out.println(n + " is not a Strong Number");
-	}
-	
-}
 }

@@ -7,7 +7,7 @@ public class Main {
 		while (num != 0) {
 			int rem = num % 8;
 			octal = rem + octal;
-			num = num/8;
+			num = num / 8;
 		}
 		System.out.println(octal);
 	}
