@@ -3,12 +3,15 @@ package SquareRoot;
 import java.util.Iterator;
 
 public class Main {
-	public static void main(String[] args) {
-		int num = 169;
-		for (int i = 0; i < num / 2; i++) {
-			if (i * i == num) {
-				System.out.println("The Square Root Of " + num + " is " + i);
-			}
+	public static double sqrt(int num , double guess) {
+		double new_guess = (guess+num/guess)/2;
+		if (new_guess == guess) {
+			System.out.println(new_guess);
+			return new_guess;
 		}
+		return sqrt(num, new_guess);
+	}
+	public static void main(String[] args) {
+		System.out.println(sqrt(80, 80/2));
 	}
 }

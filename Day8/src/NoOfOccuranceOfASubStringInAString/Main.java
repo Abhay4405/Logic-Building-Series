@@ -1,8 +1,8 @@
-package CheckIfStringContainsAnotherString;
+package NoOfOccuranceOfASubStringInAString;
 
 public class Main {
-	public static void main(String[] args) {
-	    String str = "heellohelloe";
+    public static void main(String[] args) {
+        String str = "heellohelloe";
         String substr = "ello";
         int count = 0;
 
@@ -16,14 +16,9 @@ public class Main {
             }
             if (isMatch) {
                 count++;
-                break;
             }
         }
-        if (count > 0) {
-			System.out.println("String contains subString");
-		}
-        else {
-        	System.out.println("String does not contains subString");
-		}
-	}
+
+        System.out.println("Number of occurrences: " + count);
+    }
 }
